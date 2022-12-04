@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+.App {
+  text-align: center;
+  background-color: #020923;
+  height: 100vh;
+  min-height: 768px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* .App_wrapper {
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+} */
+
+header {
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  z-index: 200;
+}
+
+nav {
+  height: 50px;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.burger_btn{
+  width: 10px;
+  height: 12px;
+  margin-right: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.burger_btn span{
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.burger_btn::before,
+.burger_btn::after{
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.burger_btn::before {
+  top: 0;
+}
+
+.burger_btn::after{
+  bottom: 0;
+}
+
+.menu_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+a {
+  transition: all 500ms ease;
+}
+
+a:hover {
+  color: #8bd3c4;
+}
+
+header ul {
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu_login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+}

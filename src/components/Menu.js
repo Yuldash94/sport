@@ -1,5 +1,6 @@
 import React from 'react'
 import { SlLogin } from "react-icons/sl";
+
 export const Menu = ({header, items}) => {
   return (
         <div className='menu_content'>
@@ -8,7 +9,7 @@ export const Menu = ({header, items}) => {
             </div>
             <ul>
                 {items.map(item => 
-                    <li>
+                    <li key={item.id}>
                         <a href={item.href}>{item.value}</a>
                     </li>
                 )}

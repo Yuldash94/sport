@@ -56,33 +56,25 @@ function App() {
     fighter_2: '5Соперник №2'
   }
   ])
-  
-  
-
-  const changeHex = (e) => {
-    const changeMatches = Object.assign([], matches)
-    let idChange = e.target.id
-    let areaOld
-    let areaActive = 'C'
-
-    changeMatches.map((match) => {
-         if (match.id === idChange) {
-            match.isActive = true
-            areaOld = match.area
-            console.log(areaOld);
-            match.area = areaActive
-          } else if (match.id !== idChange && match.isActive) {
-            match.isActive = false
-            match.area = areaOld
-            console.log(match.area);
-        } 
-        return matches;
-    })
-    setMatches(changeMatches)
-    console.log(idChange);
-    console.log(matches);
+  const [areaOld, setAreaOld] = useState('C')
     
-}
+  
+  const changeHex = (changeMatchId, changeMatchArea) => {
+  const changeMatches = Object.assign([], matches)
+
+    const newArr = changeMatches.map((match) => {
+      if (match.id === changeMatchId) {
+        match.isActive = true
+        match.area = areaOld
+      } else if ( match.isActive && match.id !== changeMatchId) {
+        match.isActive = false
+        setAreaOld(match.area)
+        match.area = changeMatchArea
+        } 
+        return match   
+    })
+    setMatches(newArr) 
+  }
   return (
     <div className="App">
       <Header/>

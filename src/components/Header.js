@@ -5,12 +5,15 @@ const Header = () => {
   const items = [
     {value: 'Как купить',
     href: '# ',
+    id: '1',
   },
   {value: 'Правила',
     href: '# ',
+    id: '2',
   },
   {value: 'Возврат билетов',
     href: '# ',
+    id: '3',
   },
   ]
   return (

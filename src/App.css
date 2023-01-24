@@ -4,19 +4,12 @@
 .App {
   text-align: center;
   background-color: #020923;
-  height: 100vh;
+  height: 820px;
   min-height: 768px;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
 }
 
-/* .App_wrapper {
-align-items: center;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
-} */
 
 header {
   color: #fff;

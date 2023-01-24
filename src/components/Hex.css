@@ -24,45 +24,6 @@
 }
 
 
-/* .hexagon_wrapper {
-    display: flex;
-    justify-content: space-around;
-    transform: rotate(-30deg);
-    padding: 30px;
-    position: relative;
-    top: 150px;
-    left: -30px;
-    z-index: 10;
-}
-.hex_wrap {
-    transform: rotate(30deg);
-}
-.hexagon_active {
-    width: 14rem;
-    height: 12rem;
-    top: -30px;
-    transition: all 500ms ease;
-}
-.hexagon_active:hover {
-    transform: scale(1.1);
-}
-.hexagon_3 > h3{
-    font-size: 28px;
-}
-.hexagon_3 > .buy {
-    font-size: 18px;
-    cursor: pointer;
-}
-.hex {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transform: rotate(10deg);
-    top: -60px;
-} */
-
-
 .hex_inner{
     background-color: #ffffff;
     width: 27rem;
@@ -78,18 +39,15 @@
 }
 
 .hex_inner_left {
-    /* transform: rotate(-10deg); */
     clip-path: polygon(0% 0%, 100% 0%, 88% 100%, 100% 100%, 0% 100%, 0 100%);
 }
 
 .hex_inner_right {
-    /* transform: rotate(-10deg); */
     clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0 100%);
 }
 .hexagon_active {
     width: 14rem;
     height: 12rem;
-    /* top: -30px; */
     transition: all 1000ms ease;
 }
 

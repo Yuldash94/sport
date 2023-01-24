@@ -9,7 +9,6 @@ const Hex = ({matches,changeHex}) =>  {
     <>
         <div className='hexagon_wrapper'> 
             {matches.map(match => 
-                    // <div key={match.id}  onClick={changeHex} className={`hexagon` + `hexagon_${match.area}`  + match.isActive  ? `hexagon hexagon_active` : null}  id={match.id}>
                     <div key={match.id}  onClick={() => {changeHex(match.id, match.area)}} className={match.isActive  ? `hexagon hexagon_active hexagon_`+match.area : `hexagon hexagon_`+match.area}  id={match.id}>
                         <p id={match.id}>{match.stadium}</p>
                         <h3 id={match.id}>{match.date}</h3>
